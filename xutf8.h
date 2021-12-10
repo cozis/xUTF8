@@ -21,9 +21,7 @@
 
 #ifndef XUTF8_H
 #define XUTF8_H
-
 #include <stdint.h> // uint32_t
-
 int   xutf8_sequence_from_utf32_codepoint(char *utf8_data, int nbytes, uint32_t utf32_code);
 int   xutf8_sequence_to_utf32_codepoint(const char *utf8_data, int nbytes, uint32_t *utf32_code);
 int   xutf8_strlen(const char *utf8_data, int nbytes);
@@ -31,12 +29,7 @@ int   xutf8_prev(const char *utf8_data, int nbytes, int idx, uint32_t *utf32_cod
 int   xutf8_next(const char *utf8_data, int nbytes, int idx, uint32_t *utf32_code);
 int   xutf8_curr(const char *utf8_data, int nbytes, int idx, uint32_t *utf32_code);
 _Bool xutf8_isASCII(char c);
-
 #endif // #ifndef UTF8_H
-
-// --------------------------------------------- //
-// --- Implementation -------------------------- //
-// --------------------------------------------- //
 
 #ifdef  XUTF8_IMPL
 #ifndef XUTF8_IMPL_ALREADY
@@ -49,12 +42,6 @@ _Bool xutf8_isASCII(char c);
 #endif
 
 #include <stddef.h> // NULL
-
-/* Symbol: xutf32_codepoint_to_utf8_sequence
-**
-**   
-**
-*/
 
 /* SYMBOL
 **   xutf8_sequence_from_utf32_codepoint
