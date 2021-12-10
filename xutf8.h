@@ -28,7 +28,6 @@ int   xutf8_strlen(const char *utf8_data, int nbytes);
 int   xutf8_prev(const char *utf8_data, int nbytes, int idx, uint32_t *utf32_code);
 int   xutf8_next(const char *utf8_data, int nbytes, int idx, uint32_t *utf32_code);
 int   xutf8_curr(const char *utf8_data, int nbytes, int idx, uint32_t *utf32_code);
-_Bool xutf8_isASCII(char c);
 #endif // #ifndef UTF8_H
 
 #ifdef  XUTF8_IMPL
